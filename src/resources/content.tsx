@@ -1,4 +1,4 @@
-import { About, Activity, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
+import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
@@ -125,7 +125,25 @@ const about: About = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/work/work_0.jpg",
+            alt: "",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/work/work_1.jpg",
+            alt: "",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/work/work_2.jpg",
+            alt: "",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/work/work_3.jpg",
             alt: "",
             width: 16,
             height: 9,
@@ -147,7 +165,32 @@ const about: About = {
             Designed the logo and brand philosophy for Mascitra Training Center (internal division initiative).
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/work/intern_0.jpg",
+            alt: "",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/work/intern_1.jpg",
+            alt: "",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/work/intern_2.jpg",
+            alt: "",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/work/intern_3.jpg",
+            alt: "",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
     ],
   },
@@ -270,9 +313,9 @@ const about: About = {
   },
 };
 
-const blog: Activity = {
-  path: "/activity",
-  label: "Activity",
+const blog: Blog = {
+  path: "/blog",
+  label: "Blog",
   title: "Writing about design and tech...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
