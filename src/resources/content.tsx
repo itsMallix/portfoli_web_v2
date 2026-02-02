@@ -87,9 +87,9 @@ const about: About = {
   avatar: {
     display: true,
   },
-  calendar: {
+  cv: {
     display: true,
-    link: "https://cal.com",
+    link: "https://drive.google.com/file/d/1BuY5EbNQsLRVrlOa-lVsJDVDWSDvuefs/view?usp=sharing",
   },
   intro: {
     display: true,
