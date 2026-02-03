@@ -93,7 +93,7 @@ const about: About = {
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "☝️ Introduction",
     description: (
       <>
         Mobile Developer (Flutter) with hands-on experience building production-ready Android applications using Flutter, BLoC, Provider, and REST API. Experienced working in professional IT consulting environments and software house. Strong background in UI/UX and mobile development with multiple national competition experience.
@@ -102,7 +102,7 @@ const about: About = {
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "🛠️ Work Experience",
     experiences: [
       {
         company: "Mascitra.com",
@@ -196,12 +196,11 @@ const about: About = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "🎓 Studies",
     institutions: [
       {
         name: "Jember University",
-        description: 
-        <>
+        description: <>
           Studied computer science, Information Technology, GPA : 3.87.
         </>,
       },
@@ -211,9 +210,170 @@ const about: About = {
       },
     ],
   },
+  organizations: {
+    display: true,
+    title: "🧤 Organizational Experience",
+    experiences: [
+      {
+        organization: "BEM Fasilkom Unej",
+        timeframe: "Dec 2023 - Dec 2024",
+        role: "Head of Multimedia Division",
+        achievements: [
+          <>
+            Managed the division of job descriptions among members to design feeds, cabinet logos, profile videos, and cabinet videos, as well as coordinating members to carry out daily tasks through Trello.
+          </>,
+          <>
+            Created design guidelines as a framework and initial template that would later be used as a “grand design” during the period.
+          </>,
+          <>
+            Participated in various committee activities within and outside the faculty.
+          </>,
+          <>
+            Updated the appearance and website of the management organization.
+          </>
+        ],
+        images: [
+          {
+            src: "/images/activity/bem_2024/bem_1.jpg",
+            alt: "",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/activity/bem_2024/bem_2.jpg",
+            alt: "",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/activity/bem_2024/bem_3.jpg",
+            alt: "",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/activity/bem_2024/bem_4.jpg",
+            alt: "",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        organization: "Operating System Laboratorium",
+        timeframe: "Nov 2022 - June 2023",
+        role: "Research and Development Staff",
+        achievements: [
+          <>
+           Conducting Linux and open source training, include the installation, configuration, setting up, and maintenance for high school students
+          </>,
+          <>
+           teaching in course sistem operasi about operating system and linux to students in one semester as a practical asistant, helping students to understand the materi and complete their tasks and assignments.
+          </>,
+          <>
+           Join Ppmb expo to introduce the laboratory to new students about operating system, linux and open source software etc.
+          </>
+        ],
+        images: [
+          {
+            src: "/images/activity/asprak_2023/asprak_1.jpg",
+            alt: "",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/activity/asprak_2023/asprak_2.jpg",
+            alt: "",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/activity/asprak_2023/asprak_3.jpg",
+            alt: "",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/activity/asprak_2023/asprak_4.jpg",
+            alt: "",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+    ],
+  },
+  achievements: {
+    display: true,
+    title: "🎖️ Achievements",
+    experiences: [
+      {
+        competition: "Seasuka 4.0",
+        timeframe: "27 Mei 2024",
+        organizer: "Issued by ForSEBI UIN Sunan Kalijaga Yogyakarta",
+        description: <>
+          Achieved finalist in the bussines plan competition at Seasuka 4.0 organized by ForSEBI UIN Sunan Kalijaga Yogyakarta, competed against numerous talented participants from various universities across Indonesia.
+        </>,
+        images: [],
+      },
+      {
+        competition: "Paramesti Season 3",
+        timeframe: "3 Nov 2023",
+        organizer: "Issued by BEM FEB Universitas Jember",
+        description: <>
+          Achieved 1st place in the UI/UX Design Competition at FIND-IT 2023 organized by KMTETI UGM, competing against numerous talented participants from various universities across Indonesia.
+        </>,
+        images: [],
+      },
+      {
+        competition: "IDLE Competition 2023",
+        timeframe: "23 June 2023",
+        organizer: "Issued BEM Fasilkom Universitas Jember",
+        description: <>
+          Achieved 1st place in the UI/UX Design Competition at ITEC 2023 and achieved 1st in the software development competition at BITS-IF 2023 organized by IDLE Bem Fasilkom Unej.
+        </>,
+        images: [
+          {
+            src: "/images/activity/idle_2023/idle_0.jpg",
+            alt: "",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/activity/idle_2023/idle_1.jpg",
+            alt: "",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        competition: "UI/UX Competition FIND-IT 2023",
+        timeframe: "2 June 2023",
+        organizer: "Issued by KMTETI Universitas Gadjah Mada",
+        description: <>
+          Achieved 1st place in the UI/UX Design Competition at FIND-IT 2023 organized by KMTETI UGM, created UIUX design for teen who addicted to PMO, Alhamdulillah be the winner and competing against numerous talented participants from various universities across Indonesia.
+        </>,
+        images: [
+          {
+            src: "/images/activity/findit_2023/findit_0.jpg",
+            alt: "",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/activity/findit_2023/findit_2.jpg",
+            alt: "",
+            width: 16,
+            height: 9,
+          }
+        ],
+      },
+    ],
+  },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "🧩 Technical skills",
     skills: [
       {
         title: "Mobile Development",

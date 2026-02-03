@@ -45,6 +45,16 @@ export default function About() {
       items: about.studies.institutions.map((institution) => institution.name),
     },
     {
+      title: about.organizations.title,
+      display: about.organizations.display,
+      items: about.organizations.experiences.map((organization) => organization.organization),
+    },
+    {
+      title: about.achievements.title,
+      display: about.achievements.display,
+      items: about.achievements.experiences.map((achievement) => achievement.competition),
+    },
+    {
       title: about.technical.title,
       display: about.technical.display,
       items: about.technical.skills.map((skill) => skill.title),
@@ -280,6 +290,186 @@ export default function About() {
               </Column>
             </>
           )}
+
+          {about.organizations.display && (
+            <>
+              <Heading
+                as="h2"
+                id={about.organizations.title}
+                variant="display-strong-s"
+                marginBottom="m"
+              >
+                {about.organizations.title}
+              </Heading>
+
+              <Column fillWidth gap="l" marginBottom="40">
+                {about.organizations.experiences.map((experience, expIndex) => (
+                  <Column
+                    key={`${experience.organization}-${experience.role}-${expIndex}`}
+                    fillWidth
+                  >
+                    <Row
+                      fillWidth
+                      horizontal="between"
+                      vertical="end"
+                      marginBottom="4"
+                    >
+                      <Text
+                        id={experience.organization}
+                        variant="heading-strong-l"
+                      >
+                        {experience.organization}
+                      </Text>
+
+                      <Text
+                        variant="heading-default-xs"
+                        onBackground="neutral-weak"
+                      >
+                        {experience.timeframe}
+                      </Text>
+                    </Row>
+
+                    <Text
+                      variant="body-default-s"
+                      onBackground="brand-weak"
+                      marginBottom="m"
+                    >
+                      {experience.role}
+                    </Text>
+
+                    <Column as="ul" gap="16">
+                      {experience.achievements.map(
+                        (achievement: React.ReactNode, achIndex: number) => (
+                          <Text
+                            as="li"
+                            variant="body-default-m"
+                            key={`${experience.organization}-achievement-${achIndex}`}
+                          >
+                            {achievement}
+                          </Text>
+                        ),
+                      )}
+                    </Column>
+
+                    {experience.images && experience.images.length > 0 && (
+                      <Row
+                        fillWidth
+                        paddingTop="m"
+                        paddingLeft="40"
+                        gap="12"
+                        wrap
+                      >
+                        {experience.images.map((image, imgIndex) => (
+                          <Row
+                            key={`${experience.organization}-image-${imgIndex}`}
+                            border="neutral-medium"
+                            radius="m"
+                            minWidth={image.width}
+                            height={image.height}
+                          >
+                            <Media
+                              enlarge
+                              radius="m"
+                              sizes={image.width.toString()}
+                              alt={image.alt}
+                              src={image.src}
+                            />
+                          </Row>
+                        ))}
+                      </Row>
+                    )}
+                  </Column>
+                ))}
+              </Column>
+            </>
+          )}
+
+          {about.achievements.display && (
+            <>
+              <Heading
+                as="h2"
+                id={about.achievements.title}
+                variant="display-strong-s"
+                marginBottom="m"
+              >
+                {about.achievements.title}
+              </Heading>
+
+              <Column fillWidth gap="l" marginBottom="40">
+                {about.achievements.experiences.map((experience, expIndex) => (
+                  <Column
+                    key={`${experience.competition}-${expIndex}`}
+                    fillWidth
+                  >
+                    <Row
+                      fillWidth
+                      horizontal="between"
+                      vertical="end"
+                      marginBottom="4"
+                    >
+                      <Text
+                        id={experience.competition}
+                        variant="heading-strong-l"
+                      >
+                        {experience.competition}
+                      </Text>
+
+                      <Text
+                        variant="heading-default-xs"
+                        onBackground="neutral-weak"
+                      >
+                        {experience.timeframe}
+                      </Text>
+                    </Row>
+
+                    <Text
+                      variant="body-default-s"
+                      onBackground="brand-weak"
+                      marginBottom="xs"
+                    >
+                      {experience.organizer}
+                    </Text>
+
+                    <Text
+                      variant="body-default-m"
+                      marginBottom="m"
+                    >
+                      {experience.description}
+                    </Text>
+
+                    {experience.images && experience.images.length > 0 && (
+                      <Row
+                        fillWidth
+                        paddingTop="m"
+                        paddingLeft="40"
+                        gap="12"
+                        wrap
+                      >
+                        {experience.images.map((image, imgIndex) => (
+                          <Row
+                            key={`${experience.competition}-image-${imgIndex}`}
+                            border="neutral-medium"
+                            radius="m"
+                            minWidth={image.width}
+                            height={image.height}
+                          >
+                            <Media
+                              enlarge
+                              radius="m"
+                              sizes={image.width.toString()}
+                              alt={image.alt}
+                              src={image.src}
+                            />
+                          </Row>
+                        ))}
+                      </Row>
+                    )}
+                  </Column>
+                ))}
+              </Column>
+            </>
+          )}
+
 
           {about.technical.display && (
             <>
