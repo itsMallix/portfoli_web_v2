@@ -1,4 +1,4 @@
-import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
+import type { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
@@ -70,8 +70,9 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Amanda, a mobile developer, who experienced building Android applications using Flutter, BLoC, Provider, and REST API. I'm passionate about crafting intuitive user experiences.
-</>
+      I'm Amanda, a mobile developer, who experienced building Android applications using Flutter,
+      BLoC, Provider, and REST API. I'm passionate about crafting intuitive user experiences.
+    </>
   ),
 };
 
@@ -96,7 +97,10 @@ const about: About = {
     title: "☝️ Introduction",
     description: (
       <>
-        Mobile Developer (Flutter) with hands-on experience building production-ready Android applications using Flutter, BLoC, Provider, and REST API. Experienced working in professional IT consulting environments and software house. Strong background in UI/UX and mobile development with multiple national competition experience.
+        Mobile Developer (Flutter) with hands-on experience building production-ready Android
+        applications using Flutter, BLoC, Provider, and REST API. Experienced working in
+        professional IT consulting environments and software house. Strong background in UI/UX and
+        mobile development with multiple national competition experience.
       </>
     ),
   },
@@ -110,16 +114,23 @@ const about: About = {
         role: "Junior Mobile Developer",
         achievements: [
           <>
-            Debugged and enhanced Lumajang Tourism mobile app (Flutter) by resolving issues across UI, state management, and APIs integration, improving app stability and reducing recurring user-facing bugs.
+            Debugged and enhanced Lumajang Tourism mobile app (Flutter) by resolving issues across
+            UI, state management, and APIs integration, improving app stability and reducing
+            recurring user-facing bugs.
           </>,
           <>
-            Developed a public reporting and information center Lumajang Eksotik mobile app (Flutter) for real- time community- to- goverment reporting and reducing reporting time from 15-30 minutes (offline) to less than 5 minutes (online submission).
+            Developed a public reporting and information center Lumajang Eksotik mobile app
+            (Flutter) for real- time community- to- goverment reporting and reducing reporting time
+            from 15-30 minutes (offline) to less than 5 minutes (online submission).
           </>,
           <>
-            Developing an internal chatbot using Microsoft Copilot Studio, used by about 10-15 staff in the internal division of BI Jember and reducing information retrieval.
+            Developed an internal chatbot using Microsoft Copilot Studio, used by about 10-15 staff
+            in the internal division of BI Jember and reducing information retrieval.
           </>,
           <>
-            uilt a division dashboard using Microsoft SharePoint as a single-door document & data management portal, designed to be used across all divisions for centralized access to internal files and information.
+            Build a division dashboard using Microsoft SharePoint as a single-door document & data
+            management portal, designed to be used across all divisions for centralized access to
+            internal files and information.
           </>,
         ],
         images: [
@@ -156,13 +167,14 @@ const about: About = {
         role: "Intern Mobile Developer",
         achievements: [
           <>
-            Maintained and debugged internal internship & employee management apps using Flutter by implementing geo- based attendance (custom radius check-in), photo upload, and UI improvements.
+            Maintained and debugged internal internship & employee management apps using Flutter by
+            implementing geo- based attendance (custom radius check-in), photo upload, and UI
+            improvements.
           </>,
+          <>Assisted UI/UX design for Mascitra’s internal certification website using Figma.</>,
           <>
-            Assisted UI/UX design for Mascitra’s internal certification website using Figma.
-          </>,
-          <>
-            Designed the logo and brand philosophy for Mascitra Training Center (internal division initiative).
+            Designed the logo and brand philosophy for Mascitra Training Center (internal division
+            initiative).
           </>,
         ],
         images: [
@@ -200,9 +212,7 @@ const about: About = {
     institutions: [
       {
         name: "Jember University",
-        description: <>
-          Studied computer science, Information Technology, GPA : 3.87.
-        </>,
+        description: <>Studied computer science, Information Technology, GPA : 3.87.</>,
       },
       {
         name: "Alterra Academy",
@@ -220,17 +230,16 @@ const about: About = {
         role: "Head of Multimedia Division",
         achievements: [
           <>
-            Managed the division of job descriptions among members to design feeds, cabinet logos, profile videos, and cabinet videos, as well as coordinating members to carry out daily tasks through Trello.
+            Managed the division of job descriptions among members to design feeds, cabinet logos,
+            profile videos, and cabinet videos, as well as coordinating members to carry out daily
+            tasks through Trello.
           </>,
           <>
-            Created design guidelines as a framework and initial template that would later be used as a “grand design” during the period.
+            Created design guidelines as a framework and initial template that would later be used
+            as a “grand design” during the period.
           </>,
-          <>
-            Participated in various committee activities within and outside the faculty.
-          </>,
-          <>
-            Updated the appearance and website of the management organization.
-          </>
+          <>Participated in various committee activities within and outside the faculty.</>,
+          <>Updated the appearance and website of the management organization.</>,
         ],
         images: [
           {
@@ -265,14 +274,18 @@ const about: About = {
         role: "Research and Development Staff",
         achievements: [
           <>
-           Conducting Linux and open source training, include the installation, configuration, setting up, and maintenance for high school students
+            Conducting Linux and open source training, include the installation, configuration,
+            setting up, and maintenance for high school students
           </>,
           <>
-           teaching in course sistem operasi about operating system and linux to students in one semester as a practical asistant, helping students to understand the materi and complete their tasks and assignments.
+            teaching in course sistem operasi about operating system and linux to students in one
+            semester as a practical asistant, helping students to understand the materi and complete
+            their tasks and assignments.
           </>,
           <>
-           Join Ppmb expo to introduce the laboratory to new students about operating system, linux and open source software etc.
-          </>
+            Join Ppmb expo to introduce the laboratory to new students about operating system, linux
+            and open source software etc.
+          </>,
         ],
         images: [
           {
@@ -311,27 +324,38 @@ const about: About = {
         competition: "Seasuka 4.0",
         timeframe: "27 Mei 2024",
         organizer: "Issued by ForSEBI UIN Sunan Kalijaga Yogyakarta",
-        description: <>
-          Achieved finalist in the bussines plan competition at Seasuka 4.0 organized by ForSEBI UIN Sunan Kalijaga Yogyakarta, competed against numerous talented participants from various universities across Indonesia.
-        </>,
+        description: (
+          <>
+            Achieved finalist in the bussines plan competition at Seasuka 4.0 organized by ForSEBI
+            UIN Sunan Kalijaga Yogyakarta, competed against numerous talented participants from
+            various universities across Indonesia.
+          </>
+        ),
         images: [],
       },
       {
         competition: "Paramesti Season 3",
         timeframe: "3 Nov 2023",
         organizer: "Issued by BEM FEB Universitas Jember",
-        description: <>
-          Achieved 1st place in the UI/UX Design Competition at FIND-IT 2023 organized by KMTETI UGM, competing against numerous talented participants from various universities across Indonesia.
-        </>,
+        description: (
+          <>
+            Achieved 1st place in the UI/UX Design Competition at FIND-IT 2023 organized by KMTETI
+            UGM, competing against numerous talented participants from various universities across
+            Indonesia.
+          </>
+        ),
         images: [],
       },
       {
         competition: "IDLE Competition 2023",
         timeframe: "23 June 2023",
         organizer: "Issued BEM Fasilkom Universitas Jember",
-        description: <>
-          Achieved 1st place in the UI/UX Design Competition at ITEC 2023 and achieved 1st in the software development competition at BITS-IF 2023 organized by IDLE Bem Fasilkom Unej.
-        </>,
+        description: (
+          <>
+            Achieved 1st place in the UI/UX Design Competition at ITEC 2023 and achieved 1st in the
+            software development competition at BITS-IF 2023 organized by IDLE Bem Fasilkom Unej.
+          </>
+        ),
         images: [
           {
             src: "/images/activity/idle_2023/idle_0.jpg",
@@ -351,9 +375,14 @@ const about: About = {
         competition: "UI/UX Competition FIND-IT 2023",
         timeframe: "2 June 2023",
         organizer: "Issued by KMTETI Universitas Gadjah Mada",
-        description: <>
-          Achieved 1st place in the UI/UX Design Competition at FIND-IT 2023 organized by KMTETI UGM, created UIUX design for teen who addicted to PMO, Alhamdulillah be the winner and competing against numerous talented participants from various universities across Indonesia.
-        </>,
+        description: (
+          <>
+            Achieved 1st place in the UI/UX Design Competition at FIND-IT 2023 organized by KMTETI
+            UGM, created UIUX design for teen who addicted to PMO, Alhamdulillah be the winner and
+            competing against numerous talented participants from various universities across
+            Indonesia.
+          </>
+        ),
         images: [
           {
             src: "/images/activity/findit_2023/findit_0.jpg",
@@ -366,7 +395,7 @@ const about: About = {
             alt: "",
             width: 16,
             height: 9,
-          }
+          },
         ],
       },
     ],
@@ -377,9 +406,7 @@ const about: About = {
     skills: [
       {
         title: "Mobile Development",
-        description: (
-          <>Able to build production-ready Android applications using Flutter.</>
-        ),
+        description: <>Able to build production-ready Android applications using Flutter.</>,
         tags: [
           {
             name: "Dart",
@@ -411,9 +438,7 @@ const about: About = {
       },
       {
         title: "Web Development",
-        description: (
-          <>Able to build website ofr your needs</>
-        ),
+        description: <>Able to build website ofr your needs</>,
         tags: [
           {
             name: "PHP",
@@ -441,9 +466,7 @@ const about: About = {
       },
       {
         title: "Multimedia",
-        description: (
-          <>Experienced with UIUX design, graphic design and video editing</>
-        ),
+        description: <>Experienced with UIUX design, graphic design and video editing</>,
         tags: [
           {
             name: "Figma",
@@ -484,7 +507,7 @@ const blog: Blog = {
 
 const work: Work = {
   path: "/work",
-  label: "Work",
+  label: "Projects",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
