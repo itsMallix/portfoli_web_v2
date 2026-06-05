@@ -524,7 +524,7 @@ const gallery: Gallery = {
   images: [
     {
       src: "/images/gallery/img_h_1.png",
-      alt: "hachi spinngin globe",
+      alt: "hachi spinning globe",
       orientation: "horizontal",
     },
     {
@@ -533,14 +533,14 @@ const gallery: Gallery = {
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img_h_2.jpg",
-      alt: "coc profile",
-      orientation: "horizontal",
-    },
-    {
       src: "/images/gallery/img_v_2.jpg",
       alt: "dream car",
       orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/img_h_2.jpg",
+      alt: "coc profile",
+      orientation: "horizontal",
     },
     // {
     //   src: "/images/gallery/vertical-2.jpg",
